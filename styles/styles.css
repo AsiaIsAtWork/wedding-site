@@ -1,0 +1,240 @@
+/* GENERAL STYLES */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #FFFCF9;
+    overflow-x: hidden;
+}
+
+/* FONT SETUP */
+@font-face {
+    font-family: "AbrilFatFace";
+    src: url(../assets/fonts/AbrilFatface-Regular.ttf);
+}
+
+@font-face {
+    font-family: "JostRegular";
+    src: url(../assets/fonts/Jost-Regular.ttf);
+}
+
+@font-face {
+    font-family: "JostItalic";
+    src: url(../assets/fonts/Jost-Italic.ttf);
+}
+
+@font-face {
+    font-family: "JostBold";
+    src: url(../assets/fonts/Jost-Bold.ttf);
+}
+
+/* LANDING SECTION */
+.landing-section {
+    width: 100vw;
+    height: 100vh;
+}
+
+nav {
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.nav-links {
+    font-family: 'JostBold';
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000; 
+}
+
+.landing-page-img {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../assets/images/flower-background.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header {
+    width: 90%;
+    height: 80%;
+    border: 4px solid #B3C0AB;
+    padding-top: 24px;
+    margin: auto;
+    position: relative;
+    z-index: -1;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-family: "AbrilFatFace";
+    font-size: 5.5rem;
+}
+
+header img {
+    position: relative;
+    bottom: 80px;
+}
+
+.header-married {
+    position: relative;
+    bottom: 160px;
+}
+
+.header-event-location {
+    font-family: "AbrilFatFace";
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    bottom: 120px;
+}
+
+.header-line {
+    display: inline-block;
+    height: 2px;
+    width: 64px;
+    background-color: #000;
+}
+
+.small-square {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background-color: #000;
+}
+
+.header-rsvp-button {
+    width: 240px;
+    padding: 12px;
+    text-decoration: none;
+    text-align: center;
+    font-family: "AbrilFatFace";
+    color: #69725D;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    position: relative;
+    bottom: 80px;
+    border: 2px solid #69725D;
+    background-color: #FFFCF9;
+}
+
+/* COUNTDOWN SECTION */
+.countdown-section {
+    width: 100vw;
+    height: 500px;
+    background-color: #49523C;
+    color: #F9F5F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown-text {
+    text-align: center;
+    font-family: 'JostRegular';
+}
+
+.countdown-section img {
+    margin-right: 32px;
+}
+
+.m-header {
+    font-family: "AbrilFatFace";
+    font-size: 3rem;
+}
+
+.rsvp-link {
+    font-family: 'JostBold';
+    color: #F9F5F0;
+}
+
+.countdown-counter {
+    display: flex;
+    text-align: center;
+    gap: 64px;
+}
+
+.counter-text {
+    font-family: 'JostRegular';
+    font-size: 2rem;
+}
+
+/* ABOUT US SECTION */
+.about-us-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us-flower-decor {
+    width: 100vw;
+    position: absolute;
+
+}
+
+.about-us-flower-decor-left {
+    float: left;
+    position: relative;
+    bottom: 150px;
+    transform: rotate(340deg);
+    margin-left: 40px;
+}
+
+.about-us-flower-decor-right {
+    float: right;
+    position: relative;
+    bottom: 150px;
+    transform: scaleX(-1) rotate(340deg);
+    margin-right: 40px;
+}
+
+.about-us-header {
+    display: flex;
+    align-items: center;
+    font-family: "AbrilFatFace";
+    font-size: 4rem;
+    gap: 32px;
+    margin-top: 120px;
+}
+
+.about-us-text {
+    font-family: 'JostRegular';
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.about-us-card-container {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.about-us-card {
+    width: 350px;
+    height: 250px;
+    border: 2px solid #000;
+    text-align: center;
+}
+
+/* WEDDING PARTY SECTION */
+.wedding-party-section {
+    width: 100vw;
+    height: 1000px;
+}
