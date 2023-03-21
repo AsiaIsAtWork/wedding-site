@@ -1,11 +1,15 @@
-/* GENERAL STYLES */
+/* FILE IMPORT */
+@import 'variables';
+@import 'mixins';
+
+/* RESET & GENERAL STYLES */
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-color: #FFFCF9;
+    background-color: $isabelline;
     overflow-x: hidden;
 }
 
@@ -54,7 +58,7 @@ nav {
     font-family: 'JostBold';
     text-decoration: none;
     text-transform: uppercase;
-    color: #000; 
+    color: $black; 
 }
 
 .landing-page-img {
@@ -69,7 +73,7 @@ nav {
 header {
     width: 90%;
     height: 80%;
-    border: 4px solid #B3C0AB;
+    border: 4px solid $ash-gray;
     padding-top: 24px;
     margin: auto;
     position: relative;
@@ -109,14 +113,14 @@ header img {
     display: inline-block;
     height: 2px;
     width: 64px;
-    background-color: #000;
+    background-color: $black;
 }
 
 .small-square {
     display: inline-block;
     height: 12px;
     width: 12px;
-    background-color: #000;
+    background-color: $black;
 }
 
 .header-rsvp-button {
@@ -125,13 +129,13 @@ header img {
     text-decoration: none;
     text-align: center;
     font-family: "AbrilFatFace";
-    color: #69725D;
+    color: $reseda-green;
     font-size: 1.5rem;
     border-radius: 8px;
     position: relative;
     bottom: 80px;
-    border: 2px solid #69725D;
-    background-color: #FFFCF9;
+    border: 2px solid $reseda-green;
+    background-color: $isabelline;
 }
 
 /* COUNTDOWN SECTION */
@@ -161,7 +165,7 @@ header img {
 
 .rsvp-link {
     font-family: 'JostBold';
-    color: #F9F5F0;
+    color: $isabelline;
 }
 
 .countdown-counter {
@@ -260,7 +264,7 @@ header img {
 }
  
 .card-front {
-    background-color: #F9F5F0;
+    background-color: $isabelline;
 }
 
 .card-front h3 {
@@ -324,4 +328,48 @@ header img {
 .wedding-party-section {
     width: 100vw;
     height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.wedding-party-flower-decor {
+    width: 100vw;
+    position: absolute;
+}
+
+.wedding-party-flower-decor-left {
+    float: left;
+    position: relative;
+    bottom: 150px;
+    margin-left: 40px;
+}
+
+.wedding-party-flower-decor-right {
+    float: right;
+    position: relative;
+    bottom: 150px;
+    margin-right: 40px;
+}
+
+.wedding-party-header {
+    display: flex;
+    align-items: center;
+    font-family: "AbrilFatFace";
+    font-size: 4rem;
+    gap: 32px;
+    margin-top: 80px;
+}
+
+.vertical-line {
+    width: 4px;
+    height: 48px;
+}
+
+.party-member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
