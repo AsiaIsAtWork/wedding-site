@@ -1,0 +1,650 @@
+/* FILE IMPORT */ /* RESET & GENERAL STYLES */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* FONT SETUP */
+@font-face {
+  font-family: "AbrilFatFace";
+  src: url(../../assets/fonts/AbrilFatface-Regular.ttf);
+}
+@font-face {
+  font-family: "JostRegular";
+  src: url(../../assets/fonts/Jost-Regular.ttf);
+}
+@font-face {
+  font-family: "JostItalic";
+  src: url(../../assets/fonts/Jost-Italic.ttf);
+}
+@font-face {
+  font-family: "JostBold";
+  src: url(../../assets/fonts/Jost-Bold.ttf);
+}
+/*FONT FAMILY CLASSES*/
+.abrilFat {
+  font-family: "AbrilFatFace";
+}
+
+.jostReg {
+  font-family: "JostRegular";
+}
+
+.jostItalic {
+  font-family: "JostItalic";
+}
+
+.jostBold {
+  font-family: "JostBold";
+}
+
+/*FONT SIZES*/
+html {
+  font-size: 16px;
+}
+
+.fontReg {
+  font-size: 1rem;
+}
+
+.fontLarge {
+  font-size: 1.5rem;
+}
+
+.fontXL {
+  font-size: 2rem;
+}
+
+.fontXXL {
+  font-size: 2.5rem;
+}
+
+.fontXXXL {
+  font-size: 3rem;
+}
+
+.font4X {
+  font-size: 4rem;
+}
+
+.font5X {
+  font-size: 5.5rem;
+}
+
+/*COLOR VARIABLES*/
+/*TEXT COLOR CLASSES*/
+.text-isabelline {
+  color: #F9F5F0;
+}
+
+.text-ash-gray {
+  color: #B3C0AB;
+}
+
+.text-reseda-green {
+  color: #69725D;
+}
+
+.text-oxford-blue {
+  color: #0F192E;
+}
+
+.text-black {
+  color: #000000;
+}
+
+.text-french-gray {
+  color: #D7CED9;
+}
+
+.text-lilac {
+  color: #B7A7D0;
+}
+
+.text-lavendar {
+  color: #9780C6;
+}
+
+.text-amethyst {
+  color: #8164B9;
+}
+
+/*BACKGROUND IMAGE CLASSES*/
+.bkgd-flower-img {
+  background-image: url(../../assets/images/flower-background.png);
+}
+
+/*BACKGROUND COLOR CLASSES*/
+.bkgd-black {
+  background-color: #000000;
+}
+
+.bkgd-isabelline {
+  background-color: #F9F5F0;
+}
+
+.bkgd-ash-gray {
+  background-color: #B3C0AB;
+}
+
+.bkgd-reseda-green {
+  background-color: #69725D;
+}
+
+.bkgd-amethyst {
+  background-color: #8164B9;
+}
+
+body {
+  background-color: #F9F5F0;
+  overflow-x: hidden;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+/* LANDING SECTION */
+.landing-section {
+  width: 100vw;
+  height: 100vh;
+}
+
+nav {
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0));
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.nav-links {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.landing-page-img {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header {
+  width: 90%;
+  height: 80%;
+  border: 4px solid #B3C0AB;
+  padding-top: 24px;
+  margin: auto;
+  position: relative;
+  z-index: -1;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header img {
+  position: relative;
+  bottom: 80px;
+}
+
+.header-married {
+  position: relative;
+  bottom: 160px;
+}
+
+.header-event-location {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  bottom: 120px;
+}
+
+.header-line {
+  display: inline-block;
+  height: 2px;
+  width: 64px;
+}
+
+.small-square {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+}
+
+.header-rsvp-button {
+  width: 240px;
+  padding: 12px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  position: relative;
+  bottom: 80px;
+  border: 2px solid #69725D;
+}
+
+/* COUNTDOWN SECTION */
+.countdown-section {
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown-text {
+  text-align: center;
+}
+
+.countdown-section img {
+  margin-right: 32px;
+}
+
+.countdown-counter {
+  display: flex;
+  text-align: center;
+  gap: 64px;
+}
+
+/* ABOUT US SECTION */
+.about-us-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us-flower-decor {
+  width: 100vw;
+  position: absolute;
+}
+
+.about-us-flower-decor-left {
+  float: left;
+  position: relative;
+  bottom: 150px;
+  transform: rotate(340deg);
+  margin-left: 40px;
+}
+
+.about-us-flower-decor-right {
+  float: right;
+  position: relative;
+  bottom: 150px;
+  transform: scaleX(-1) rotate(340deg);
+  margin-right: 40px;
+}
+
+.about-us-text {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.about-us-card-container {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.about-us-card {
+  width: 350px;
+  height: 250px;
+  text-align: center;
+  perspective: 500px;
+}
+
+.card-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(15, 25, 46, 0.5);
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.about-us-card:hover .card-content {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-front h3 {
+  margin: 24px 16px 24px;
+}
+
+.card-front img {
+  margin-bottom: 40px;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card-back h3 {
+  margin: 24px 16px 8px;
+}
+
+.card-back img {
+  visibility: hidden;
+}
+
+.card-back p {
+  margin: 0 16px 8px;
+}
+
+.card-options button {
+  width: 88px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "JostRegular";
+  font-size: 16px;
+  padding: 12px;
+  margin: 4px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.poll-options {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.card-options button:hover {
+  color: #F9F5F0;
+  background-color: rgb(15, 25, 46);
+}
+
+/* WEDDING PARTY SECTION */
+.wedding-party-section {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wedding-party-flower-decor {
+  width: 100vw;
+  position: absolute;
+}
+
+.wedding-party-flower-decor-left {
+  float: left;
+  position: relative;
+  bottom: 150px;
+  margin-left: 40px;
+}
+
+.wedding-party-flower-decor-right {
+  float: right;
+  position: relative;
+  bottom: 150px;
+  margin-right: 40px;
+}
+
+.party-header {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 40px;
+  position: relative;
+  right: 600px;
+}
+
+.vertical-line {
+  display: inline-block;
+  width: 4px;
+  height: 48px;
+}
+
+.wedding-party {
+  display: flex;
+  gap: 96px;
+  margin-top: 48px;
+}
+
+.party-member {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.profile-pic-frame {
+  position: absolute;
+  bottom: 132px;
+}
+
+.party-name {
+  margin-top: 32px;
+}
+
+.party-title {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.wedding-party-flowergirls {
+  display: flex;
+  justify-content: center;
+  gap: 96px;
+  margin-top: 80px;
+}
+
+.arrow-right {
+  transform: scaleX(-1);
+}
+
+/* ABOUT EVENT SECTION */
+.about-event-section {
+  width: 100vw;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-event-decor {
+  display: flex;
+  justify-content: center;
+}
+
+.leaf-left {
+  margin-right: 40px;
+}
+
+.leaf-right {
+  margin-left: 40px;
+  transform: scaleX(-1);
+}
+
+#conference-timeline {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.timeline-start, .timeline-end {
+  display: table;
+  padding: 2px 32px;
+  max-width: 5%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.conference-center-line {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -2px;
+  z-index: -1;
+}
+
+.conference-timeline-content {
+  padding-top: 67px;
+  padding-bottom: 67px;
+}
+
+.content-icons-left {
+  position: absolute;
+  left: -320px;
+  top: 120px;
+}
+
+.content-icon-right {
+  position: relative;
+  bottom: 80px;
+}
+
+.timeline-article {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.content-left-container, .content-right-container {
+  width: 600px;
+  max-width: 45%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.content-left, .content-right {
+  position: relative;
+  width: auto;
+  text-align: center;
+  padding: 27px 25px;
+}
+
+.timeline-article p {
+  padding: 0;
+  line-height: 24px;
+  position: relative;
+}
+
+.content-left-container {
+  float: left;
+}
+
+.content-right-container {
+  float: right;
+}
+
+.content-left:before, .content-right:before {
+  position: absolute;
+  top: 20px;
+  font-size: 23px;
+  font-family: "FontAwesome";
+  color: #fff;
+}
+
+.content-left:before {
+  content: "\f0da";
+  right: -8px;
+}
+
+.content-right:before {
+  content: "\f0d9";
+  left: -8px;
+}
+
+.meta-date {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 32px;
+  height: 32px;
+  margin-left: -20px;
+  border-radius: 100%;
+  border: 4px solid #000000;
+}
+
+/*===== Responsive Vertical Timeline =====*/
+@media only screen and (max-width: 830px) {
+  #conference-timeline .timeline-start,
+  #conference-timeline .timeline-end {
+    margin: 0;
+  }
+  #conference-timeline .conference-center-line {
+    margin-left: 0;
+    left: 50px;
+  }
+  .timeline-article .meta-date {
+    margin-left: 0;
+    left: 20px;
+  }
+  .timeline-article .content-left-container,
+  .timeline-article .content-right-container {
+    max-width: 100%;
+    width: auto;
+    float: none;
+    margin-left: 110px;
+    min-height: 53px;
+  }
+  .timeline-article .content-left-container {
+    margin-bottom: 20px;
+  }
+  .timeline-article .content-left,
+  .timeline-article .content-right {
+    padding: 10px 25px;
+    min-height: 65px;
+  }
+  .timeline-article .content-left:before {
+    content: "\f0d9";
+    right: auto;
+    left: -8px;
+  }
+  .timeline-article .content-right:before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .timeline-article p {
+    margin: 0;
+  }
+  .timeline-article p span.article-number {
+    display: none;
+  }
+}
+.heart-arrow {
+  margin-top: 80px;
+}
+
+/*# sourceMappingURL=style.css.map */

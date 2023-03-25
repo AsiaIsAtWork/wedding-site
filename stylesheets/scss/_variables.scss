@@ -1,0 +1,73 @@
+/*COLOR VARIABLES*/
+$isabelline: #F9F5F0;
+$ash-gray: #B3C0AB;
+$reseda-green: #69725D;
+$oxford-blue: #0F192E;
+$black: #000000;
+$french-gray: #D7CED9;
+$lilac: #B7A7D0;
+$lavendar: #9780C6;
+$amethyst: #8164B9;
+
+/*TEXT COLOR CLASSES*/
+.text-isabelline {
+    color: $isabelline;
+}
+
+.text-ash-gray {
+    color: $ash-gray;
+}
+
+.text-reseda-green {
+    color: $reseda-green;
+}
+
+.text-oxford-blue {
+    color: $oxford-blue;
+}
+
+.text-black {
+    color: $black;
+}
+
+.text-french-gray {
+    color: $french-gray;
+}
+
+.text-lilac {
+    color: $lilac;
+}
+
+.text-lavendar {
+    color: $lavendar;
+}
+
+.text-amethyst {
+    color: $amethyst;
+}
+
+/*BACKGROUND IMAGE CLASSES*/
+.bkgd-flower-img {
+    background-image: url(../../assets/images/flower-background.png);
+}
+
+/*BACKGROUND COLOR CLASSES*/
+.bkgd-black {
+    background-color: $black;
+}
+
+.bkgd-isabelline {
+    background-color: $isabelline;
+}
+
+.bkgd-ash-gray {
+    background-color: $ash-gray;
+}
+
+.bkgd-reseda-green {
+    background-color: $reseda-green;
+}
+
+.bkgd-amethyst {
+    background-color: $amethyst;
+}

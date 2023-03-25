@@ -1,0 +1,76 @@
+/* RESET & GENERAL STYLES */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* FONT SETUP */
+@font-face {
+    font-family: "AbrilFatFace";
+    src: url(../../assets/fonts/AbrilFatface-Regular.ttf);
+}
+
+@font-face {
+    font-family: "JostRegular";
+    src: url(../../assets/fonts/Jost-Regular.ttf);
+}
+
+@font-face {
+    font-family: "JostItalic";
+    src: url(../../assets/fonts/Jost-Italic.ttf);
+}
+
+@font-face {
+    font-family: "JostBold";
+    src: url(../../assets/fonts/Jost-Bold.ttf);
+}
+
+/*FONT FAMILY CLASSES*/
+.abrilFat {
+    font-family: "AbrilFatFace";
+}
+
+.jostReg {
+    font-family: "JostRegular";
+}
+
+.jostItalic {
+    font-family: "JostItalic";
+}
+
+.jostBold {
+    font-family: "JostBold";
+}
+
+/*FONT SIZES*/
+html {
+    font-size: 16px;
+}
+
+.fontReg {
+    font-size: 1rem;
+}
+
+.fontLarge {
+    font-size: 1.5rem; 
+}
+
+.fontXL {
+    font-size: 2rem;
+}
+
+.fontXXL {
+    font-size: 2.5rem;
+}
+
+.fontXXXL {
+    font-size: 3rem;
+}
+
+.font4X {
+    font-size: 4rem;
+}
+
+.font5X {
+    font-size: 5.5rem;
+}
