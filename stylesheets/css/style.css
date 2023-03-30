@@ -73,8 +73,8 @@ html {
 
 /*COLOR VARIABLES*/
 /*TEXT COLOR CLASSES*/
-.text-isabelline {
-  color: #F9F5F0;
+.text-white-snow {
+  color: #F6F4F5;
 }
 
 .text-ash-gray {
@@ -119,8 +119,8 @@ html {
   background-color: #000000;
 }
 
-.bkgd-isabelline {
-  background-color: #F9F5F0;
+.bkgd-white-snow {
+  background-color: #F6F4F5;
 }
 
 .bkgd-ash-gray {
@@ -136,7 +136,8 @@ html {
 }
 
 body {
-  background-color: #F9F5F0;
+  background-image: url("../../assets/images/lined-paper-bkgd.png");
+  background-color: #F6F4F5;
   overflow-x: hidden;
 }
 
@@ -179,6 +180,7 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
 }
 
 header {
@@ -188,7 +190,6 @@ header {
   padding-top: 24px;
   margin: auto;
   position: relative;
-  z-index: -1;
   top: 120px;
   display: flex;
   flex-direction: column;
@@ -235,6 +236,8 @@ header img {
   position: relative;
   bottom: 80px;
   border: 2px solid #69725D;
+  cursor: pointer;
+  z-index: 3;
 }
 
 /* COUNTDOWN SECTION */
@@ -275,7 +278,7 @@ header img {
 .about-us-flower-decor-left {
   float: left;
   position: relative;
-  bottom: 150px;
+  bottom: 120px;
   transform: rotate(340deg);
   margin-left: 40px;
 }
@@ -328,20 +331,18 @@ header img {
   backface-visibility: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-.card-front h3 {
-  margin: 24px 16px 24px;
-}
-
-.card-front img {
-  margin-bottom: 40px;
+.card-front {
+  background-color: #F6F4F5;
 }
 
 .card-back {
   transform: rotateY(180deg);
+  color: #F6F4F5;
+  background-color: #69725D;
 }
 
 .card-back h3 {
@@ -378,7 +379,7 @@ header img {
 }
 
 .card-options button:hover {
-  color: #F9F5F0;
+  color: #F6F4F5;
   background-color: rgb(15, 25, 46);
 }
 
@@ -520,12 +521,27 @@ header img {
 .content-icons-left {
   position: absolute;
   left: -320px;
-  top: 120px;
+  top: 160px;
 }
 
-.content-icon-right {
-  position: relative;
-  bottom: 80px;
+.right-icon {
+  position: absolute;
+  left: 172px;
+  bottom: 100px;
+}
+
+.content-icons-right {
+  position: absolute;
+  right: -140px;
+  top: 420px;
+}
+
+.cocktail-icons {
+  top: 750px;
+}
+
+.reception-icons {
+  top: 950px;
 }
 
 .timeline-article {
@@ -565,24 +581,6 @@ header img {
 
 .content-right-container {
   float: right;
-}
-
-.content-left:before, .content-right:before {
-  position: absolute;
-  top: 20px;
-  font-size: 23px;
-  font-family: "FontAwesome";
-  color: #fff;
-}
-
-.content-left:before {
-  content: "\f0da";
-  right: -8px;
-}
-
-.content-right:before {
-  content: "\f0d9";
-  left: -8px;
 }
 
 .meta-date {
@@ -645,6 +643,87 @@ header img {
 }
 .heart-arrow {
   margin-top: 80px;
+}
+
+/* VENUE & TRAVEL SECTION */
+.venue-info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.venue-info-flower-decor {
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+}
+
+.venue-flower-left {
+  position: relative;
+  bottom: 1280px;
+  transform: scaleX(-1);
+}
+
+.venue-flower-right {
+  position: relative;
+  bottom: 1280px;
+  float: right;
+}
+
+.venue-info {
+  text-align: center;
+}
+
+.venue-info-map iframe {
+  box-shadow: 0 0 15px rgba(15, 25, 46, 0.5);
+}
+
+.hotel-options-header {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.hotel-options-header p {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.hotel-option {
+  display: flex;
+  margin-top: 80px;
+}
+
+.hotel-details {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 80px;
+}
+
+.hotel-details p {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+/*FOOTER*/
+footer {
+  width: 100vw;
+  height: 120px;
+  margin-top: 80px;
+  padding: 40px;
+}
+
+footer a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+footer p {
+  margin-top: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

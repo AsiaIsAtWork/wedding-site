@@ -1,5 +1,5 @@
 /*COLOR VARIABLES*/
-$isabelline: #F9F5F0;
+$white-snow: #F6F4F5;
 $ash-gray: #B3C0AB;
 $reseda-green: #69725D;
 $oxford-blue: #0F192E;
@@ -10,8 +10,8 @@ $lavendar: #9780C6;
 $amethyst: #8164B9;
 
 /*TEXT COLOR CLASSES*/
-.text-isabelline {
-    color: $isabelline;
+.text-white-snow {
+    color: $white-snow;
 }
 
 .text-ash-gray {
@@ -56,8 +56,8 @@ $amethyst: #8164B9;
     background-color: $black;
 }
 
-.bkgd-isabelline {
-    background-color: $isabelline;
+.bkgd-white-snow {
+    background-color: $white-snow;
 }
 
 .bkgd-ash-gray {
